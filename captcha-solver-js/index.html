@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+	
+	Captcha Source: <a href="https://www.e-crvsp.sp.gov.br/gever/jcaptcha?id=1523619486022">https://www.e-crvsp.sp.gov.br/gever/jcaptcha?id=1523619486022</a><br />
+	<br />
+	<div style ="width:180px;height:50px;overflow:hidden; display:inline-block"><img id="captcha" /></div> <a onclick="reload()" href="javascript:;">New Sample Captcha</a><br />
+	<input id="btnBreak" type="button" onclick="breakCaptcha()" value="Solve Captcha" /><br />
+	<div id="container" style="display:none">
+		Segmentation: <canvas id="segmentacao" width="180" height="50"></canvas><br />
+		Detected Text: <input type="text" id="ocr" />
+	</div>
+</body>
+
+	<script src="captcha.js"></script>
+	<script src="gocr.js"></script>
+
+</html>
